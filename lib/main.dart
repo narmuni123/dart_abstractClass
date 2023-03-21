@@ -7,6 +7,17 @@ extension Log on Object {
       );
 }
 
+abstract class CanRun {
+  void run();
+}
+
+class Cat extends CanRun{
+  @override
+  void run() {
+
+  }
+}
+
 void main() {
   runApp(const MyApp());
 }
