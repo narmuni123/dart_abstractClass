@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'dart:developer' as devtools show log;
+
+extension Log on Object {
+  void lof() => devtools.log(
+        toString(),
+      );
+}
 
 void main() {
   runApp(const MyApp());
